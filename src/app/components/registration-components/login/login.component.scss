@@ -1,0 +1,239 @@
+input:focus,
+button:active,
+button:focus {
+  outline: none;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 410px;
+
+  @media (min-width:1750px) {
+    margin-top: 442px;
+  }
+}
+
+.INPUT {
+  background-color: #0f171f;
+  margin-top: 5px !important;
+  margin-bottom: 5px;
+  border: 1px solid #1e2f3f;
+  padding: 8px;
+  border-radius: 4px;
+  width: -webkit-fill-available;
+  opacity: 75%;
+
+}
+
+INPUT::placeholder {
+  color: #ffda87;
+  opacity: 50%;
+}
+
+.INPUT:focus {
+  outline: none !important;
+  border: 1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+  color: #ffda87;
+}
+
+.form-control {
+  background: #05142399;
+  border: 1px solid #193550;
+  border-radius: 4px;
+  color: #d2ab5f;
+
+  @media (min-width: 1750px) {
+    padding: 12px;
+  }
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 1px 0px 2px #3f8eade6;
+  color: #d2ab5f;
+}
+
+.buttondiv {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+form {
+  width: 35%;
+
+  @media(min-width: 1750px) {
+    width: 30%;
+  }
+}
+
+.loginBtn {
+  border: none;
+  width: 80%;
+  height: 50px;
+  color: #ffda87;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-2.png');
+  background-color: transparent;
+  font-family: "Franklin Gothic Medium";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 10px;
+}
+
+.forgetBtn {
+  border: none;
+  width: 80%;
+  height: 50px;
+  color: #ffda87;
+  
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-1.png');
+  background-color: transparent;
+  font-family: "Franklin Gothic Medium";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 521px) {
+  .INPUT {
+
+    height: 30px;
+  }
+
+  .logButton {
+    width: 488px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .INPUT {
+    height: 30px;
+
+  }
+}
+
+.container-login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  height: 500px;
+}
+
+app-registration-main {
+  height: 200px;
+  position: absolute;
+  top: 2%;
+  width: 100%;
+
+
+  .coming_soon_logo {
+
+    margin-top: 10px !important;
+  }
+}
+
+.submit-ans {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  position: relative;
+  top: 15px;
+  font-family: "Modern No. 20";
+
+  @media (min-width: 1750px) {
+    width: 70%;
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  .action {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #d2ab5f;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+  }
+}
+
+.submit-ans1 {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 10px;
+  position: relative;
+  top: 15px;
+  font-family: "Modern No. 20";
+  color: #b39962;
+  text-decoration: underline;
+
+  @media (min-width: 1750px) {
+    width: 70%;
+    padding-top: 16px;
+  }
+
+  .content-ans {
+    cursor: pointer;
+  }
+}
+
+.form-control {
+  background: #05142399;
+  border: 1px solid #193550;
+  margin-top: 5px !important;
+  border-radius: 4px;
+  color: #d2ab5f;
+  height: 37px;
+
+  @media (min-width: 1750px) {
+    padding: 12px;
+  }
+}
+
+.form-control:focus {
+  outline: none;
+ 
+  box-shadow: rgb(70 125 193) 0px 1px 11px -2px, rgb(73 130 199) 0px 1px 7px -3px;
+  color: #d2ab5f;
+}
+
+.requird_input {
+  box-shadow: #f30808 0px 0px 0px 1px, #770505 0px 1px 4px 0px;
+}
+
+.form-invalid {
+  opacity: 50%;
+}
+.forget-input {
+  background: transparent;
+  color: #d2ab5f;
+  border: none;
+  outline: none;
+  font-family: "Modern No. 20";
+  text-decoration: underline;
+}

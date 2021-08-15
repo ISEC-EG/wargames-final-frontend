@@ -1,0 +1,50 @@
+<div class="land-fluid row td-overlay__inner">
+  <section class="land-fluid">
+    <div>
+      <app-logo-home></app-logo-home>
+    </div>
+    <div class="row content">
+      <div class="col-3">
+        <app-left-side-bar *ngIf="isTeamInfoExists"></app-left-side-bar>
+      </div>
+      <div class="col-6 block--full">
+        <div class="landing">
+          <div class="content-block">
+            <div class="block-rules">
+              <div class="rules_content">
+                <div class="rules-title">
+                  <span class="rules-span">RULES</span>
+                </div>
+              </div>
+              <div class="rules-container">
+
+                <div class="rules_desc">
+                  <div>
+                    <span class="rules-content-text">
+                      <span>1- Maximum number is <strong>5</strong> participants per team and minimum number is <strong>2 </strong>per team ...</span>
+                      <br>
+        <span>2- Each team member shall play in just in one team </span> <br>
+        <span>3- Do not share flags between teams.</span> <br>
+        <span>4- In case of any questions, ask us over</span><br>
+        <span>5- Flag format (unless specified otherwise):ASCWG&#123; flag &#125; </span><br>
+        <span>6-  Brute forcing the flags or DDOS attacks will block you out and disqualify the team.</span><br>
+        <span>7- Any attacks on the wellbeing of other teams/CTF </span><br>
+        <span>infrastructure are prohibited and punished </span><br>
+        <span>with disqualification. Please, don't disrupt competition.</span><br>
+        <span><strong class="note">*Note:</strong> All same team members will sign with the Email and password that used to create the team.</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <app-right-side-bar></app-right-side-bar>
+      </div>
+    </div>
+  </section>
+</div>

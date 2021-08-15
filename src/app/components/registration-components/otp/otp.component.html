@@ -1,0 +1,25 @@
+<div class="otp-container">
+    <div class="otp-header">
+        <span>Please Enter Your OTP</span>
+    </div>
+    <div class="otp-input">
+        <form [formGroup]="otpForm">
+            <div class="form">
+                <div class="input">
+                    <input type="text" formControlName="otp" placeholder="Enter OTP">
+
+                </div>
+
+                <div class="otp-actions" title="OTP"
+                    [ngClass]=" otpForm.invalid || (otpForm.valid && verify) ? 'form-invalid': '' ">
+
+                    <input type="submit" value="VERIFY" class="verify" (click)="verifyOTP()"
+                        [ngClass]=" otpForm.invalid || (otpForm.valid && verify) ? 'form-invalid': '' "
+                        [disabled]="otpForm.invalid || (otpForm.valid && verify)">
+                </div>
+
+                
+            </div>
+        </form>
+    </div>
+</div>

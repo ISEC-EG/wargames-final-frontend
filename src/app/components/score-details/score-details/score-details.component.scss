@@ -1,0 +1,461 @@
+.land-fluid,
+.content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.score--board,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.block-0 {
+  width: inherit;
+
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    padding-top: 120px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    padding-top: 140px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    padding-top: 155px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-top: 160px;
+  }
+
+
+
+}
+
+.block-0 .score-board_content {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Title.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  position: relative;
+  bottom: 15px;
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    bottom: 30px;
+  }
+
+  @media (min-width: 1750px) {
+    bottom: 40px;
+  }
+
+}
+
+.block-0 .score-board_content .score-title {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d2ab5f;
+
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  @media (min-width: 1750px) {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 13px;
+    padding-bottom: 36px;
+    font-size: 19px;
+  }
+}
+
+.content-block {
+  position: relative;
+
+}
+
+.block-0 {
+  position: absolute;
+
+
+
+}
+
+.team-score-container {
+  width: 80%;
+
+  margin: -25px auto;
+  position: relative;
+
+  .header-team-score,
+  .team-score-content {
+    display: flex;
+    width: 100%;
+
+    color: #d2ab5f;
+  }
+
+  .team-score-content span {
+    line-height: 38px;
+
+    height: 40px;
+  }
+
+  .header-team-score span,
+  .team-score-content span {
+    width: 25%;
+    text-align: center;
+    font-size: 16px;
+
+    @media (min-width: 1750px) {
+      font-size: 18px;
+    }
+  }
+
+  .team-score-content {
+    padding: 5px 0;
+  }
+
+  .team-score-img {
+    display: flex;
+    flex-direction: row;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Team-Profile-Info.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+
+
+
+
+    .team-header-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      text-align: center;
+
+
+
+      .team-header {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        color: #d2ab5f;
+        justify-content: center;
+        text-align: center;
+
+      }
+
+      .header-span {
+        margin-bottom: 10px;
+      }
+
+
+    }
+
+  }
+
+  .challenge-dash-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    .challenge-dash-header {
+      width: 100%;
+
+      .challenge-header-img {
+
+        width: 100%;
+        background: url('https://ihawk.s3.us-east-2.amazonaws.com/Challenge-Description-BG.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+
+        .challenge-header-text {
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+
+          line-height: 66px;
+
+          height: 85px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          color: #d2ab5f;
+
+          @media (min-width:1450px) {
+            top: 6px;
+          }
+
+          @media (min-width:1600px) {
+            top: 9px;
+          }
+
+          @media (min-width:1750px) {
+            top: 11px;
+          }
+
+          @media (min-width:1900px) {
+            top: 15px;
+          }
+
+          .ch-no {
+            position: relative;
+            left: 10px;
+          }
+
+          .ch-time {
+            position: relative;
+            right: 20px;
+          }
+
+
+
+        }
+      }
+    }
+
+  }
+
+
+
+  .score-detials-container {
+
+    width: 100%;
+    position: relative;
+
+    .score-detail-img {
+      width: 110%;
+      height: 270px;
+      margin: 0 auto;
+      margin-left: -5%;
+
+      background: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Team-Profile.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+
+    }
+
+
+
+    .challenge-items-container {
+      padding-top: 25px;
+      line-height: 27px;
+      height: 270px;
+
+      width: 92%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .challenge-score-item {
+      display: flex;
+      flex-direction: column;
+      width: 87%;
+      margin: auto;
+      height: 80%;
+
+
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey !important;
+        border-radius: 10px !important;
+      }
+
+      /* Handle */
+
+      &::-webkit-scrollbar-thumb {
+        /* background: red;  */
+        background: linear-gradient(#620d07, #FFDA87, #620d07) !important;
+        /* scrollbar-color: #d06900, #00a173; */
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(#620d07, #FFDA87, #620d07);
+        /* scrollbar-color: #fEa200, #00de9f; */
+        cursor: pointer;
+      }
+
+
+
+        .score-item-container {
+          display: flex;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          margin: 5px auto;
+          font-size: 17px;
+          font-weight: bold;
+
+          @media (min-width:1750px) {
+            font-size: 20px;
+          }
+
+          .ch-NO {
+            border-right: 2px solid;
+
+            -o-border-image: linear-gradient(to bottom, #0c1725, #a09d5f, #050c15) 1 100%;
+            border-image: linear-gradient(to bottom, #fff0c5, #171610, #f5e8c4) 1 100%;
+          }
+
+          .ch-points {
+            border-right: 2px solid;
+            border-left: 2px solid;
+            -o-border-image: linear-gradient(to bottom, #0c1725, #a09d5f, #050c15) 1 100%;
+            border-image: linear-gradient(to bottom, #fff0c5, #171610, #f5e8c4) 1 100%;
+          }
+
+          span {
+
+            text-align: center;
+            font-size: 18px;
+            white-space: nowrap;
+
+          }
+
+          #time {
+            padding-right: 3%;
+          }
+        }
+
+        .row {
+          width: inherit;
+          border-bottom: 1px solid rgb(70, 69, 69);
+        }
+
+        .my_class {
+          border: none;
+        }
+
+        hr {
+          margin: 0;
+        }
+
+
+
+
+      }
+
+    }
+
+  }
+
+
+
+
+
+  .team {
+    cursor: pointer;
+  }
+
+  mat-paginator {
+    background: transparent;
+    color: #cebb8b;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .spinner {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+  .not-solved {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+
+  strong {
+    margin-right: 7px;
+  }
+
+  .name-big {
+    display: block;
+    width: 70%;
+    font-size: 15px;
+    word-break: break-all;
+    word-spacing: 100vw;
+    margin: 7px 17px;
+    margin-right: 5px;
+    padding-left: 5px;
+
+    line-height: 10px;
+    text-decoration: none !important;
+    text-align: center;
+    font-weight: 300;
+
+
+    @media(min-width: 1750px) {
+      font-size: 17px;
+    }
+  }
+
+  .newLine {
+    display: block;
+    width: 70%;
+    font-size: 15px;
+    word-break: break-all;
+    word-spacing: 0px;
+    margin: 7px 17px;
+    margin-right: 5px;
+    padding-left: 5px;
+
+    line-height: 14px;
+    text-decoration: none !important;
+    text-align: center;
+    font-weight: 300;
+
+
+    @media(min-width: 1750px) {
+      font-size: 17px;
+    }
+
+  }

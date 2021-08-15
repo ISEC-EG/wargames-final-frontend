@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+// Variables
+@import "~bootstrap/dist/css/bootstrap.css";
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+$color-main: #f4f4f4;
+
+@font-face {
+  font-family: "Modern No. 20";
+  src: url(/assets/wargames/fonts/MOD20.TTF) format("opentype");
+}
+
+
+html {
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "Modern No. 20";
+  overflow-x: hidden;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+.challenge-successs .mat-dialog-container {
+  padding: 0px !important;
+  padding: 0px !important;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  width: 90vw;
+  height: 80vh;
+  background: transparent;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  min-width: 900px;
+}
+
+.challenge-wrong .mat-dialog-container {
+  padding: 0px !important;
+  padding: 0px !important;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  width: 90vw;
+  height: 90vh;
+  background: transparent;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  min-width: 900px;
+}
+
+.toast {
+
+  width: 800px !important;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+
+.mat-dialog-container {
+  padding: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+router-outlet + * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

@@ -1,0 +1,144 @@
+.challenges-fluid,
+.content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.challenges--block,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.block-0 {
+  width: inherit;
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    padding-top: 130px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    padding-top: 150px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    padding-top: 165px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-top: 170px;
+  }
+}
+
+.block-0 .challenegs_content {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Title.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  position: relative;
+  bottom: 10px;
+}
+
+.block-0 .challenegs_content .challenges-title {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d2ab5f;
+
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 13px;
+    padding-bottom: 36px;
+    font-size: 19px;
+  }
+}
+
+.challenges--full,
+.challenges--full-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.challenge {
+  width: 30%;
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Challenge-BG.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: 1750px) {
+    width: 30%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 19px;
+  }
+}
+
+.challenge:nth-child(odd) {
+  right: 20px;
+
+}
+
+.challenge:nth-child(even) {
+  left: 20px;
+}
+
+.challenges--full .challenge:first-child,
+.challenges--full .challenge:nth-child(2) {
+  bottom: 5px;
+}
+
+
+mat-paginator {
+  background: transparent;
+  color: #cebb8b;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+::ng-deep.mat-paginator-range-label {
+  font-weight: bold;
+  color: #cebb8b;
+  font-size: 14px;
+  font-family: Roboto-400;
+}
+
+
+::ng-deep.mat-paginator-page-size {
+  display: none !important;
+}

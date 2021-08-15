@@ -1,0 +1,39 @@
+.mainError {
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Main-BG.jpg');
+  background-size: 100% 100%;
+  height: 250px;
+  color: white;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  
+}
+
+.controls {
+  margin-top: 20px;
+  
+}
+
+h4 {
+  color: #FFDA87;
+  font-size: 20px;
+ 
+  
+}
+
+.btn {
+  background: #700200;
+  opacity: 75%;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: #FFDA87;
+  font-size: 18px;
+}

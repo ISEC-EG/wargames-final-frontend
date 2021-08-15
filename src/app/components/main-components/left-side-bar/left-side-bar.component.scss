@@ -1,0 +1,378 @@
+.left-side {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.wrapper {
+  overflow-x: hidden;
+
+  display: flex;
+  overflow-y: hidden;
+}
+
+.content {
+  font-family: "Modern No. 20";
+
+  .team-name {
+    position: absolute;
+    left: 100px;
+    top: 56px;
+    font-weight: 700;
+    color: #353536;
+    font-size: 15px;
+    width: 131px;
+
+    .con-0 {
+      width: 90%;
+      text-align: center;
+      word-wrap: break-word;
+      font-size: 14px;
+
+      word-wrap: break-word;
+
+      span {
+        display: block;
+        max-width: 90%;
+        font-size: 14px;
+      }
+    }
+
+
+
+    .in-team-name {
+      border: none;
+      outline: none;
+      width: 90%;
+      background: transparent;
+      color: #353536;
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .fa-pencil,
+    .fa-check {
+
+
+      z-index: 100;
+      color: #2e2013;
+      top: 4px;
+      position: absolute;
+      right: 9px;
+      cursor: pointer;
+
+      @media(min-width:1750px) {
+        right: -12%;
+      }
+    }
+
+    .fa-check {
+      color: green;
+      font-size: 18px;
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      left: 115px;
+      top: 44px;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      top: 77px;
+      left: 139px;
+      font-size: 20px
+    }
+
+    @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+      top: 103px;
+      left: 150px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    @media only screen and (min-width: 1921px) {
+      top: 126px;
+      left: 165px;
+      font-size: 23px;
+      letter-spacing: 1px;
+    }
+
+  }
+
+
+
+  .team-point {
+    position: absolute;
+    left: 116px;
+    top: 194px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #d2ab5f;
+
+
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      left: 111px;
+      top: 172px;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      top: 237px;
+      left: 133px;
+      font-size: 16px;
+    }
+
+    @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+      top: 280px;
+      left: 150px;
+      font-size: 18px;
+    }
+
+    @media only screen and (min-width: 1921px) {
+      top: 322px;
+      left: 166px;
+      font-size: 20px;
+    }
+
+    .points {
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+      left: 5px;
+      bottom: 1px;
+      font-weight: 400;
+
+      @media only screen and (min-width: 0px) and (max-width: 1299px) {
+        font-size: 9px;
+      }
+
+      @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+        font-size: 12px;
+        bottom: 2px;
+      }
+
+      @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+        font-size: 12px;
+        bottom: 2px;
+      }
+
+      @media only screen and (min-width: 1921px) {
+        font-size: 14px;
+        ;
+      }
+
+    }
+  }
+
+  .solved {
+    position: absolute;
+    left: 111px;
+    top: 227px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #d2ab5f;
+
+
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      left: 105px;
+      top: 202px;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      top: 274px;
+      left: 128px;
+      font-size: 16px;
+    }
+
+    @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+      top: 322px;
+      left: 148px;
+      font-size: 18px;
+    }
+
+    @media only screen and (min-width: 1921px) {
+      top: 370px;
+      left: 160px;
+      font-size: 20px;
+    }
+
+    .points {
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+      left: 5px;
+      bottom: 1px;
+      font-weight: 400;
+
+      @media only screen and (min-width: 0px) and (max-width: 1299px) {
+        font-size: 9px;
+      }
+
+      @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+        font-size: 12px;
+        bottom: 2px;
+      }
+
+      @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+        font-size: 12px;
+        bottom: 2px;
+      }
+
+      @media only screen and (min-width: 1921px) {
+        font-size: 14px;
+        ;
+      }
+
+    }
+  }
+
+  .clicked-settings {
+    left: 90px;
+    top: 258px;
+    position: absolute;
+    height: 100px;
+    width: 110px;
+    cursor: pointer;
+
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      left: 90px;
+      top: 250px;
+      height: 85px;
+      width: 100px;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      top: 322px;
+      left: 106px;
+      height: 100px;
+      width: 120px;
+    }
+
+    @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+      top: 383px;
+      left: 128px;
+      height: 110px;
+      width: 125px;
+    }
+
+    @media only screen and (min-width: 1921px) {
+      top: 453px;
+      left: 142px;
+      height: 124px;
+      width: 140px;
+    }
+  }
+}
+
+.sidebar-wrapper {
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  position: absolute;
+  top: -110px;
+}
+
+
+.side_pic {
+
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    width: 65%;
+  }
+
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    width: 70%;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    width: 80%;
+  }
+
+
+  @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 1921px) {
+    width: 100%;
+  }
+}
+
+.logout {
+  position: inherit;
+
+  .logout-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+
+    img {
+
+      position: relative;
+      width: 85%;
+
+    }
+
+    img:hover {
+      content: url('/assets/wargames/SignIn.png');
+    }
+  }
+}
+
+
+.profile-team {
+  cursor: pointer;
+  width: 100px;
+  height: 90px;
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 10.5%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width:0px) and (max-width:750px) {
+    top: 14%;
+    left: 10%;
+    width: 100px;
+  }
+
+  @media (min-width:751px) and (max-width:900px) {
+    top: 14%;
+    left: 10%;
+    width: 100px;
+  }
+
+  @media (min-width:901px) and (max-width:1399px) {
+    top: 15%;
+    left: 9.5%;
+    width: 100px;
+  }
+
+  @media (min-width:1400px) and (max-width:1600px) {
+    top: 18.5%;
+    left: 10%;
+    width: 100px;
+  }
+
+  @media (min-width:1400px) and (max-width:1600px) and (max-height:750px) {
+    top: 20%;
+    left: 10%;
+    width: 100px;
+  }
+
+  @media (min-width:1601px) and (max-width:1749px) {
+    top: 18.7%;
+    left: 9.5%;
+    width: 110px;
+    height: 110px;
+  }
+
+  @media (min-width:1750px) and (max-width:1980px) {
+    top: 22.5%;
+    left: 10.5%;
+    width: 110px;
+    height: 110px;
+  }
+}

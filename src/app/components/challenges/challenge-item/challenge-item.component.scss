@@ -1,0 +1,84 @@
+.challenge-name {
+  margin-top: 22px;
+  font-weight: 600;
+}
+
+.challenge-level,
+.challenge-points,
+.challenge-category {
+  margin-top: 3px;
+
+  span {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background: #7f745191;
+    border-radius: 20px;
+    font-size: 14px;
+
+    @media (min-width: 1750px) {
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 19px;
+    }
+  }
+}
+
+.challenge-category {
+  span {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: 1750px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}
+
+.challenge-state {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Solved-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  color: #d2ab5f;
+
+  span {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 6px;
+    padding-top: 3px;
+    font-size: 14px;
+
+    @media (min-width: 1750px) {
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-bottom: 13px;
+      padding-top: 6px;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1750px) {
+    margin-top: 10px;
+  }
+}
+
+
+
+.challenge-state-solved {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Solved-Btn-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  color: #d2ab5f;
+}

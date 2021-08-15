@@ -1,0 +1,6 @@
+<div class="challenge-name"><span>{{ challengeInfo.title }}</span></div>
+<div class="challenge-level"><span>Level: {{ challengeInfo.level === 1? 'Easy': challengeInfo.level === 2? 'Medium':
+        'Hard' }}</span></div>
+<div class="challenge-points"><span>Points: {{ challengeInfo.points }}</span></div>
+<div class="challenge-category"><span>Category: {{ challengeInfo.category.split(' ')[0] }}</span></div>
+<div class="challenge-state" [ngClass]="challengeInfo.solved ? 'challenge-state-solved': '' "><span>Solved</span></div>

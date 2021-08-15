@@ -1,0 +1,45 @@
+<div class="left-side">
+  <div class="wrapper">
+    <div class="sidebar-wrapper">
+      <img src="https://ihawk.s3.us-east-2.amazonaws.com/Right-Side.png" class="side_pic"  />
+    </div>
+    <div class="content">
+      <form [formGroup]="changeTeamNameForm">
+        <div class="team-name">
+          <div class="con-0">
+            <span *ngIf="!chanege">{{teamInfo.name}}</span>
+            <input value="{{name}}" formControlName="teamName" type="text" class="in-team-name" *ngIf="chanege"
+              autofocus />
+          </div>
+          <div>
+            <i class="fa fa-pencil" aria-hidden="true" (click)="changeEditor()" *ngIf="!chanege"></i>
+            <i class="fa fa-check" aria-hidden="true" (click)="changeName()" *ngIf="chanege"></i>
+          </div>
+        </div>
+
+      </form>
+
+      <div class="profile-team" (click)="goToMyProfile()" title="My profile">
+      </div>
+
+      <div class="team-point">
+        <span>{{ teamInfo.score }} <span class="points">Points</span></span>
+      </div>
+
+      <div class="solved">
+        <span >{{ teamInfo.solutions.length }} / {{ teamInfo.totalChallenges }} <span class="points">Solved</span></span>
+        <!-- <span *ngIf="!isGameStart">{{ teamInfo.solutions.length }} / 0 <span class="points">Solved</span></span> -->
+      </div>
+
+      <div class="clicked-settings" (click)="settings()">
+      </div>
+    </div>
+  </div>
+
+  <div class="logout" (click)="logout()">
+    <div class="logout-bg">
+      <img src="/assets/wargames/logout.png" />
+    </div>
+  </div>
+
+</div>

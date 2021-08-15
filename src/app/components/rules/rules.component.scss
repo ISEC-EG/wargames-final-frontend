@@ -1,0 +1,219 @@
+
+.land-fluid, .content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.landing,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.content-block {
+  position: relative;
+  
+
+}
+
+.block-rules {
+  margin-bottom: 40px;
+  width: inherit;
+  position: absolute;
+  top: -190px;
+  @media (min-height: 900px) {
+    top: -210px;
+  }
+  @media (min-height: 1080px) {
+    top: -250px;
+  }
+  
+  @media (min-height: 1200px) {
+    top: -290px;
+  }
+  @media (min-height: 1300px) {
+    top: -300px;
+  }
+  @media (min-height: 1450px) {
+    top: -340px;
+  }
+  @media (min-height: 1650px) {
+    top: -400px;
+  }
+  
+
+
+
+  
+}
+
+
+.coming_soon_txt {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Tex-Intro.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  div {
+    font-family: "Modern No. 20";
+    font-weight: 600;
+    
+    padding: 25px 30px 25px 30px;
+
+  }
+}
+.rules-span{
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 14px;
+}
+
+.block-rules .rules_content {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Challenge-Score.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+
+ 
+}
+
+.block-rules .rules_content .rules-title {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d2ab5f;
+
+
+
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1750px) {
+    
+  }
+}
+
+.rules_desc {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Rules-BG.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  background-position: center;
+  display: flex;
+  width: 80%;
+  
+  flex-direction: row;
+  padding-top: 27px;
+  height: 430px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  @media (min-width: 1200px)and (min-height: 650px) {
+    height: 430px;
+    font-size: 16px;
+    
+  }
+  @media (min-width: 1200px)and (min-height: 750px) {
+    height: 440px;
+    font-size: 17px;
+    
+  }
+  
+  
+  @media (min-width: 1400px)and (min-height: 1200px) {
+    height: 500px;
+    font-size: 18px;
+    
+  }
+  @media (min-width: 1600px)and (min-height: 1350px) {
+    height: 550px;
+    font-size: 20px;
+    
+  }
+  @media (min-width: 1800px) and (min-height: 1350px) {
+    height: 600px;
+    font-size: 23px;
+    
+  }
+  @media (min-width: 2200px) and (min-height: 1800px) {
+    height: 740px;
+    font-size: 28px;
+  }
+  
+  
+
+  .rules-content-text {
+    position: absolute;
+    top: 48px;
+    text-align: left;
+    width: 88%;
+    margin: 0 auto;
+    padding-left: 20px;
+    @media (min-height: 700px) {
+      
+      top: 50px;
+    }
+    @media (min-height: 1000px) {
+      
+      top: 70px;
+    }
+    @media (min-height: 1700px) {
+      
+      top: 80px;
+    }
+    
+  
+   
+  }
+
+  div {
+
+    font-weight: 600;
+    padding: 55px 45px 15px 30px;
+    height: 215px;
+
+    @media (min-width: 1750px) {
+      padding: 55px 60px 15px 50px;
+       height: 225px;
+    }
+  }
+  @media (min-height: 0px) and (max-height: 1080px) {
+    padding-bottom: 320px;
+
+  }
+
+}
+
+.rules-title {
+  font-family: "Modern No. 20";
+}
+.rules-content-text span {
+  text-transform: capitalize;
+  strong {
+    color: red;
+    
+    
+  }
+  .note {
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+  }
+}

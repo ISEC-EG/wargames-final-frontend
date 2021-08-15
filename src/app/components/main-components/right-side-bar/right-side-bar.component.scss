@@ -1,0 +1,206 @@
+.right-side {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.right-wrapper {
+  overflow-x: hidden;
+  display: flex;
+  overflow-y: hidden;
+
+  position: absolute;
+  
+  top: -110px;
+  right: 60px;
+  text-align: center;
+}
+
+.rules {
+  position: absolute;
+  cursor: pointer;
+  left: 5px;
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    top: 135px;
+    left: 10px;
+  }
+
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    top: 140px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    top: 160px;
+  }
+
+  @media only screen and (min-width: 1750px) {
+    top: 188px;
+  }
+
+  img {
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      width: 90%;
+    }
+  }
+
+  img:hover {
+    content: url('https://ihawk.s3.us-east-2.amazonaws.com/Rules-H.png');
+  }
+}
+
+.challenges {
+  position: absolute;
+  cursor: pointer;
+  left: 5px;
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    top: 255px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    top: 270px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    top: 310px;
+    left: 5px;
+  }
+
+  @media only screen and (min-width: 1750px) {
+    top: 350px;
+    left: 5px;
+  }
+
+  img {
+
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      width: 90%;
+    }
+
+  }
+
+  img:hover {
+    content: url('https://ihawk.s3.us-east-2.amazonaws.com/Challenges-H.png');
+  }
+}
+
+.board {
+  position: absolute;
+  cursor: pointer;
+  left: 5px;
+
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    top: 370px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    top: 390px;
+    left: 10px;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    top: 450px;
+    left: 5px;
+  }
+
+  @media only screen and (min-width: 1750px) {
+    top: 500px;
+    left: 5px;
+  }
+
+  img {
+    @media only screen and (min-width: 0px) and (max-width: 1299px) {
+      width: 70%;
+    }
+
+    @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+      width: 80%;
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+      width: 90%;
+    }
+  }
+
+  img:hover {
+    content: url('https://ihawk.s3.us-east-2.amazonaws.com/Score-Board-H.png');
+  }
+}
+
+
+
+
+.r-side_pic {
+  @media only screen and (min-width: 0px) and (max-width: 1299px) {
+    width: 65%;
+  }
+
+
+  @media only screen and (min-width: 1300px) and (max-width: 1599px) {
+    width: 70%;
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1749px) {
+    width: 80%;
+  }
+
+
+  @media only screen and (min-width: 1750px) and (max-width: 1920px) {
+    width: 90%;
+    
+  }
+
+  @media only screen and (min-width: 1921px) {
+    
+    width: 100%;
+  }
+}
+
+.sound {
+  position: inherit;
+  
+
+  .sound-bg {
+    text-align: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+
+    img {
+      position: relative;
+      width: 85%;
+    }
+
+    .not-mute:hover {
+      content: url('/assets/wargames/Sound-Off.png');
+    }
+
+    .mute:hover {
+      content: url('/assets/wargames/Sound-On.png');
+    }
+
+  }
+}

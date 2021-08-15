@@ -1,0 +1,14 @@
+<div class="team-rank row">
+    <div class="rank col-3">
+        <span>{{(rankNo + (pageIndex * pageSize))}}</span>
+    </div>
+    <div class="name col-4">
+        <span>{{ team.name }}</span>
+    </div>
+    <div class="country col-2">
+        <img src="../../../assets/wargames/countries/{{toKebabCase(team.country)}}.svg" width="24" title="{{team.country}}"/>
+    </div>
+    <div class="points col-3">
+        <span>{{ team.score }} Points</span>
+    </div>
+</div>

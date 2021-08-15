@@ -1,0 +1,71 @@
+.team-rank {
+    text-align: center;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Score-Board-BG.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-weight: bold;
+  
+    @media (min-width: 1400px) and (max-width: 1599px) {
+      font-size: 17px;
+    }
+  
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      font-size: 21px;
+    }
+  
+    @media (min-width: 1750px) {
+      font-size: 23px;
+    }
+  
+    .rank {
+      text-align: center;
+      position: relative;
+      left: 30px;
+  
+      @media (min-width: 1600px) and (max-width: 1749px) {
+        left: 35px;
+      }
+  
+      @media (min-width: 1750px) {
+          left: 40px;
+        }
+    }
+  
+    .country {
+      text-align: end;
+      position: relative;
+      left: 12px;
+  
+      img {
+        border-radius: 50%;
+        border: 2px solid #a7770e;
+        
+        filter: brightness(140%);
+        box-shadow: 0 0 12px #f3f2ed;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  
+    .points {
+      position: relative;
+  
+      @media (min-width: 0px) and (max-width: 1399px) {
+        left: 5px;
+      }
+  
+      @media (min-width: 1600px) and (max-width: 1749px) {
+        left: 5px;
+      }
+    }
+
+    
+}
+  

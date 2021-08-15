@@ -1,0 +1,325 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 58px;
+
+  .logo-img {
+    z-index: 1;
+  }
+
+  .main-txt-img {
+    
+    background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Tex-Intro.png');
+    background-size: 100% 100%;
+    width: 57%;
+    padding: 20px;
+    background-repeat: no-repeat;
+
+    .paragraph-main {
+      padding: 40px;
+      text-align: center;
+      text-emphasis: none;
+      -webkit-text-stroke: medium;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+      width: 52%;
+    }
+  }
+}
+
+
+.Bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding-top: 8px;
+
+}
+
+.land-fluid,
+.content {
+  height: inherit;
+
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing,
+.content-block {
+  position: relative;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+
+.coming_soon_logo {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 0 auto;
+
+  .soon_logo {
+    width: 100%;
+
+    @media (min-width: 0px) and (max-width: 1199px) {
+      width: 75%;
+    }
+
+    @media (min-width: 1200px) and (max-width:1749px) {
+      width: 85%;
+    }
+
+
+  }
+}
+
+.block-1 {
+  position: relative;
+  bottom: 25px;
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    bottom: 55px;
+  }
+
+  @media (min-width: 1750px) {
+    bottom: 50px;
+  }
+}
+
+.coming_soon_txt {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Tex-Intro.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+
+  position: relative;
+  bottom: 50px;
+  margin-bottom: -50px;
+  margin-top: 10px;
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    bottom: 55px;
+  }
+
+  @media (min-width: 1750px) {
+    bottom: 50px;
+  }
+
+  div {
+    font-family: "Modern No. 20";
+    font-weight: 600;
+    
+    padding: 25px 30px 25px 30px;
+
+    
+  }
+}
+
+
+.coming_soon_social {
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+}
+
+.btn-actions {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-login,
+.btn-signup {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50%;
+
+
+  
+
+  height: 73px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 50px;
+
+  .login,
+  .signup {
+    font-family: "Modern No. 20";
+
+  }
+
+  @media screen and (max-width: 520px) {
+    margin-top: -50px;
+  }
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    width: 45%;
+    height: 71px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    width: 45%;
+    height: 71px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    width: 356px;
+    height: 73px;
+    margin-bottom: 50px;
+  }
+
+
+  
+}
+
+
+.register {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Modern No. 20";
+}
+
+.signup-D,
+.login-D {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  color: #d2ab5f;
+  
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 0px;
+
+
+  .register-txt {
+    word-spacing: 4px;
+  }
+
+
+  .name-container {
+    input {
+      width: 60%;
+      height: 30px;
+    }
+  }
+
+
+  @media (min-width: 1850px) {
+    text-align: center;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 99%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 45%;
+    color: #d2ab5f;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+.login-D {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  color: #d2ab5f;
+  
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 0px;
+
+  @media (min-width: 1850px) {
+    text-align: center;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 99%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 45%;
+    color: #d2ab5f;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+.signup-txt {
+  text-align: left;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 5px 5px ;
+  strong{
+    color: red;
+  }
+}

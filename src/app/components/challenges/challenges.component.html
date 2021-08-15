@@ -1,0 +1,47 @@
+<div class="challenges-fluid row td-overlay__inner">
+    <section class="challenges-fluid">
+        <div>
+            <app-logo-home></app-logo-home>
+        </div>
+        <div class="row content">
+            <div class="col-3">
+                <app-left-side-bar></app-left-side-bar>
+            </div>
+            <div class="col-6 block--full">
+                <div class="challenges--block">
+                    <div class="content-block">
+                        <div class="block-0">
+                            <div class="challenegs_content">
+                                <div class="challenges-title">
+                                    <span>CHALLENGES</span>
+                                </div>
+                            </div>
+
+                            <div class="all-challenges">
+                                <div class="challenges--full">
+                                    <div class="challenge" *ngFor="let challenge of challengesArr.slice(0, 2)" (click)="goToChallenge(challenge._id)">
+                                        <app-challenge-item [challengeInfo]="challenge"></app-challenge-item>
+                                    </div>
+                                </div>
+                                <div class="challenges--full-row-2">
+                                    <div class="challenge" *ngFor="let challenge of challengesArr.slice(2, 4)" (click)="goToChallenge(challenge._id)">
+                                        <app-challenge-item [challengeInfo]="challenge"></app-challenge-item>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="paginate">
+                                <mat-paginator showFirstLastButtons [hidePageSize]="false" [pageSize]="pageSize"
+                                    [pageIndex]="currentPage" [length]="length"></mat-paginator>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <app-right-side-bar></app-right-side-bar>
+            </div>
+        </div>
+    </section>
+</div>

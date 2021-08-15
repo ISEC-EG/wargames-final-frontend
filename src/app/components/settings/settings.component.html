@@ -1,0 +1,107 @@
+<div class="settings-fluid row td-overlay__inner">
+  <section class="settings-fluid">
+    <div>
+      <app-logo-home></app-logo-home>
+    </div>
+    <div class="row content">
+      <div class="col-3">
+        <app-left-side-bar></app-left-side-bar>
+      </div>
+      <div class="col-6 block--full">
+        <div class="settings--block">
+          <div class="content-block">
+            <div class="block-0">
+              <div class="settings_content">
+                <div class="settings-title">
+                  <span>SETTINGS</span>
+                </div>
+              </div>
+
+              <div class="settings-D">
+                <div class="settings-txt">
+                  <span>CHANGE PASSWORD</span>
+                </div>
+              </div>
+              <form [formGroup]="changePasswordForm" (ngSubmit)="submitChangePassword()">
+                <div class="settings-password">
+                  <div class="old-pass-container">
+                    <input type="password" placeholder="Old password" class="form-control" formControlName="oldPassword"
+                      [ngClass]="
+                        (oldPassword.invalid &&
+                          oldPassword.touched &&
+                          oldPassword.dirty) ||
+                        (oldPassword.errors?.required && oldPassword.touched)
+                          ? 'requird_input'
+                          : ''
+                      " />
+                  </div>
+
+                 
+                  <div class="password-errors">
+                    <span class="password-error text-danger" *ngIf="
+                        password.errors &&
+                        password.hasError('pattern') &&
+                        password.touched &&
+                        password.dirty
+                      ">*password must be more than 7 characters (letters and
+                      numbers One Capital, special character)</span>
+                  </div>
+
+                  <div class="pass-container">
+                    <input type="password" placeholder="New password" class="form-control" formControlName="password"
+                      [ngClass]="
+                        (password.invalid &&
+                          password.touched &&
+                          password.dirty) ||
+                        (password.errors?.required && password.touched)
+                          ? 'requird_input'
+                          : ''
+                      " />
+                  </div>
+
+
+                  
+                  <div class="c-password-errors">
+                    <span class="c-password-error text-danger" *ngIf="changePasswordForm.errors &&
+              changePasswordForm.hasError('misMatch') &&
+              password.valid &&
+              confirmPassword.touched &&
+              confirmPassword.dirty &&
+              !confirmPassword.hasError('required')">*confirm password and password not match</span>
+
+                  </div>
+
+                  <div class="confirm-pass-container">
+                    <input type="password" placeholder="Confirm new password" class="form-control"
+                      formControlName="confirmPassword" [ngClass]="
+                        changePasswordForm.errors?.misMatch ||
+                        (confirmPassword.errors?.required &&
+                          confirmPassword.touched)
+                          ? 'requird_input'
+                          : ''
+                      " />
+                  </div>
+                </div>
+
+                <div class="submit-ans" [ngClass]="
+                    changePasswordForm.invalid
+                      ? 'form-invalid'
+                      : ''
+                  ">
+                  <div class="content-ans">
+                    <input type="submit" class="action" value="CONFIRM" [disabled]="
+                        changePasswordForm.invalid
+                      " />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <app-right-side-bar></app-right-side-bar>
+      </div>
+    </div>
+  </section>
+</div>

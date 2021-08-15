@@ -1,0 +1,227 @@
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 392px;
+
+  @media (min-width:1750px) {
+    margin-top: 442px;
+  }
+}
+
+
+.buttondiv {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 35%;
+
+  @media(min-width: 1750px) {
+    width: 30%;
+  }
+}
+
+.submit-ans {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  position: relative;
+  top: 16px;
+  font-family: "Modern No. 20";
+
+  @media (min-width: 1750px) {
+    width: 70%;
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  .action {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #d2ab5f;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+  }
+}
+
+@media screen and (min-width: 521px) {
+  .INPUT {
+
+    height: 30px;
+  }
+
+  .logButton {
+    width: 488px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .INPUT {
+
+    height: 30px;
+
+  }
+
+}
+
+.container-login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  height: 500px;
+}
+
+app-registration-main {
+  height: 200px;
+  position: absolute;
+  top: 2%;
+  width: 100%;
+
+
+  .coming_soon_logo {
+
+    margin-top: 10px !important;
+  }
+}
+
+.password-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  .div-pass {
+    width: 48%;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+
+.form-control {
+  background: #05142399;
+  border: 1px solid #193550;
+  margin-top: 3px !important;
+  border-radius: 4px;
+  color: #d2ab5f;
+  height: 30px;
+
+  @media (min-width: 1750px) {
+    padding: 12px;
+  }
+}
+
+.form-control:focus {
+  outline: none;
+  
+  box-shadow: rgb(70 125 193) 0px 1px 11px -2px, rgb(73 130 199) 0px 1px 7px -3px;
+  color: #d2ab5f;
+}
+
+
+mat-form-field {
+ 
+  background: #05142399;
+  border: 1px solid #193550;
+  height: 0px;
+  margin-top: 5px;
+  width: 100%;
+
+  mat-label,
+  ::ng-deep.mat-select-value-text {
+    color: rgb(203 186 147) !important;
+  }
+
+  ::ng-deep .mat-select-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent !important;
+    border-top: 9px solid !important;
+    margin: 0 7px !important;
+    color: rgb(203 186 147) !important;
+  }
+
+  ::ng-deep .mat-form-field-underline {
+    height: 0px !important;
+  }
+
+  ::ng-deep .mat-form-field-infix {
+    padding-top: 0px !important;
+    border: none;
+    font-size: 14px;
+
+    ::ng-deep .mat-select-arrow-wrapper {
+      position: relative;
+      top: 5px;
+    }
+  }
+
+
+  ::ng-deep .mat-form-field-flex {
+    padding-left: 15px;
+    background: #05142399;
+    border: 1px solid #193550;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+::ng-deep .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+.mat-form-field-empty.mat-form-field-label {
+  display: none !important;
+}
+
+
+::ng-deep .mat-select-value-text {
+  font-size: 14px !important;
+  position: relative !important;
+  top: 3px !important;
+  line-height: 30px !important; 
+}
+
+
+.requird_input {
+  box-shadow: #f30808 0px 0px 0px 1px, #770505 0px 1px 4px 0px;
+}
+
+.form-invalid {
+  opacity: 50%;
+}
+::ng-deep .mat-form-field-type-mat-select .mat-form-field-label {
+  position: relative;
+  top: 2px;
+}
+::ng-deep .mat-select-arrow-wrapper {
+  position: relative;
+  top: 2px !important;
+
+  @media(min-width: 1750px){
+
+  }
+}
+::ng-deep .ng-tns-c5-1 .ng-star-inserted {
+  line-height: 30px ;
+}

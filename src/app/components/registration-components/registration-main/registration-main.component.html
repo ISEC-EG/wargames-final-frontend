@@ -1,0 +1,56 @@
+<div class="land-fluid row td-overlay__inner">
+  <section class="land-fluid">
+    <div class="row content">
+      <div class="col-6 offset-3 block--full">
+        <div class="landing">
+          <div class="content-block">
+            <div class="block-0">
+              <div class="coming_soon_logo">
+                <div>
+                  <img src="https://ihawk.s3.us-east-2.amazonaws.com/logo.png" class="soon_logo" />
+                </div>
+              </div>
+              <div class="container-actions-reg">
+
+                <div class="coming_soon_txt">
+                  <div>
+                    <span *ngIf="!signupURL">
+                      Our desire is to extend a gracious and inclusive welcome to all of who decided to join "Sigurd
+                      Saga" , We are glad you didn't miss the chance to be among the cybersecurity elites.
+                    </span>
+                    <span *ngIf="signupURL" class="signup-txt">
+                      1- Name Must be At Least 4 Characters
+                      <br>
+                      2- Password must Contains at least 8 Characters , Special Characters <strong>(@ , / , % , $ ,
+                        #)</strong> , Capital Character and numbers
+
+                    </span>
+                  </div>
+                </div>
+
+                <div class="register">
+                  <div class="login-D" (click)="gotoSignIn()" title="Login">
+                    <div class="register-txt">
+                      <span>LOGIN</span>
+                    </div>
+                  </div>
+                  <div class="signup-D">
+                    <div class="register-txt" (click)="gotoSignUp()" title="SignUP">
+                      <span>SIGN UP</span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="block-1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

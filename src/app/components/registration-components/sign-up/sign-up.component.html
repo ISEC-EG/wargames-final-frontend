@@ -1,0 +1,47 @@
+<div class="container-login">
+  <app-registration-main></app-registration-main>
+  <div class="sign-up">
+    <form [formGroup]="signupForm">
+      <div>
+        <input
+          [ngClass]="(teamName.invalid && teamName.touched && teamName.dirty) || (teamName.errors?.required && teamName.touched) ? 'requird_input' : ''"
+          placeholder="Team name" formControlName="name" maxlength="25" type="text" class="form-control">
+      </div>
+      <div>
+        <input [ngClass]="email.invalid && email.touched ? 'requird_input' : ''" placeholder="Email" type="email"
+          formControlName="email" class="form-control">
+      </div>
+      <div class="password-container">
+        <div class="div-pass">
+          <input
+            [ngClass]="(password.invalid && password.touched && password.dirty) || (password.errors?.required && password.touched) ? 'requird_input' : ''"
+            formControlName="password" placeholder="Password" minLength="10" maxLength="25" type="password"
+            class="INPUT form-control">
+        </div>
+        <div class="div-pass">
+          <input
+            [ngClass]="(signupForm.errors?.misMatch) || (confirmPassword.errors?.required && confirmPassword.touched)? 'requird_input' : ''"
+            formControlName="confirmPassword" placeholder="Confirm Password" type="password" class="INPUT form-control">
+        </div>
+      </div>
+
+      <div>
+        <input
+          [ngClass]="(teamSecret.invalid && teamSecret.touched && teamSecret.dirty) || (teamSecret.errors?.required && teamSecret.touched) ? 'requird_input' : ''"
+          placeholder="Team Secret" formControlName="teamSecret" type="text" class="INPUT form-control">
+      </div>
+
+      <div>
+        <div class="submit-ans" [ngClass]="(signupForm.valid && !loged ) ? '': 'form-invalid' ">
+          <div class="content-ans">
+            <input type="submit" class="action" value="SIGN UP" (click)="submitSignupForm()"
+              [disabled]="signupForm.invalid || (signupForm.valid && loged)">
+          </div>
+        </div>
+
+      </div>
+
+
+    </form>
+  </div>
+</div>

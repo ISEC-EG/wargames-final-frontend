@@ -1,0 +1,101 @@
+<div class="challenges-fluid row td-overlay__inner">
+    <section class="challenges-fluid">
+        <div>
+            <app-logo-home></app-logo-home>
+        </div>
+        <div class="row content">
+            <div class="col-3">
+                <app-left-side-bar></app-left-side-bar>
+            </div>
+            <div class="col-6 block--full">
+                <div class="challenges--block">
+                    <div class="content-block">
+                        <div class="block-0">
+                            <div class="challenegs_content">
+                                <div class="challenges-title">
+                                    <span>CHALLENGES</span>
+                                </div>
+                            </div>
+
+                            <div class="challenge-D">
+                                <div class="row">
+                                    <div class="name col-4">
+                                        <span>{{challenge.title}}</span>
+                                    </div>
+                                    <div class="level col-4">
+                                        <span> {{ challenge.level === 1? 'Easy': challenge.level === 2? 'Medium':
+                                            'Hard' }} Level </span>
+                                    </div>
+                                    <div class="points col-4">
+                                        <span>{{challenge.points}}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="challenge_desc">
+                                <div class="ch-desc">
+                                    <span>
+                                        {{challenge.description}}
+                                        <br />
+                                        <span>Flag must start with ASCWG&#10100;...answer&#10101;</span>
+                                    </span>
+                                    <!-- <div class="linkDiv">
+                                        <strong style="color: #0c1726;">Link</strong>
+                                        <span>
+                                            <a [href]="challenge.externalLink" style="padding-left: 30px;
+                                          color: #700200;
+                                          text-decoration: underline;" *ngIf="challenge.category === 'web'">Challenge
+                                                Link</a>
+                                            <a (click)="downloadFile(challenge.externalLink)" style="padding-left: 30px;
+                                          color: #700200;
+                                          text-decoration: underline;" *ngIf="challenge.category !== 'web'">Download
+                                                Challenge</a>
+                                        </span>
+                                    </div> -->
+
+                                </div>
+                            </div>
+
+                            <!-- <div class="hint" (click)="requestHint()">
+                                <button class="hint--btn">HINT</button>
+                            </div> -->
+
+                            <div class="hint" *ngIf="titleIsWeb">
+                                <!-- <button class="hint--btn">Link</button> -->
+                                <a class="hint--btn" [href]="challenge.externalLink" target="_blank">Link</a>
+                            </div>
+
+                            <div class="hint" (click)="downloadFile(challenge.externalLink)" *ngIf="!titleIsWeb">
+                                <button class="hint--btn">Download</button>
+                            </div>
+
+                            <form [formGroup]="submitFlagForm">
+                                <div class="challenge_ans">
+                                    <div class="main-ans">
+                                        <div class="content-ans">
+                                            <textarea placeholder="ASCWG{..answer}" formControlName="flag"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                            <div class="submit-ans" (click)="submitChallenge(challenge._id)"
+                                [ngClass]="submitFlagForm.invalid ? 'form-invalid': '' ">
+                                <div class="content-ans">
+                                    <input type="submit" class="action" [disabled]="submitFlagForm.invalid">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <app-right-side-bar></app-right-side-bar>
+            </div>
+        </div>
+    </section>
+</div>

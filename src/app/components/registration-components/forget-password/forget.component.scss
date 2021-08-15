@@ -1,0 +1,356 @@
+.settings-fluid,
+.content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.settings--block,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.content-block {
+  position: relative;
+  height: 600PX;
+}
+
+.block-0 {
+  position: absolute;
+  height: 100%;
+  top: 19%;
+  width: inherit;
+
+  @media (min-height: 900px) and (max-height: 1200px) {
+    top: 14%;
+  }
+
+  @media (min-height: 1000px) and (max-height: 1100px) {
+    top: 10%;
+  }
+
+  @media (min-height: 1101px) and (max-height: 1200px) {
+    top: 2%;
+  }
+
+  @media (min-height: 1201px) and (max-height: 1400px) {
+    top: -1%;
+  }
+
+  @media (min-height: 1401px) and (max-height: 1600px) {
+    top: -2%;
+  }
+
+  @media (min-height: 1601px) and (max-height: 1900px) {
+    top: -16%;
+  }
+
+  @media (min-height: 1901px) and (max-height: 2100px) {
+    top: -30%;
+  }
+
+  @media (min-height: 2101px) and (max-height: 2500px) {
+    top: -40%;
+  }
+
+
+}
+
+
+.block-0 .settings_content {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Title.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+
+
+
+}
+
+.qoute {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qoute-img {
+  width: 100%;
+  position: relative;
+
+
+}
+
+.img-text {
+  position: absolute;
+  top: 20%;
+  width: 90%;
+  margin: 0 auto;
+  left: 5%;
+
+  p {
+
+    font-size: 16px;
+    font-weight: bold;
+
+    @media (min-height: 600px) and (max-height: 900px) {
+      font-size: 17px !important;
+    }
+
+    @media (min-height: 901px) and (max-height: 1200px) {
+      font-size: 20px !important;
+    }
+
+    @media (min-height: 1201px) and (max-height: 2500px) {
+      font-size: 24px !important;
+    }
+  }
+
+}
+
+.change-password-logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+
+  .change-img {
+    width: 250px;
+  }
+
+  span {
+    position: absolute;
+    line-height: 15px;
+    color: #d2ab5f;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 5px;
+
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+
+  .INPUT {
+    margin-top: 10px;
+    padding-left: 5px;
+    background-color: rgba(22, 31, 52, 0.76);
+    border: 0;
+    outline: none;
+    box-shadow: 0px 0px 2px 0px #d2ab5f;
+
+    @media (min-width: 1080px) and (max-width: 1800px) and (min-height: 900px) and (max-height: 1200px) {
+      height: 35px !important;
+    }
+
+    @media (min-width : 1750px) {
+      height: 35px !important;
+    }
+
+    @media (min-height: 1201px) and (max-height: 2500px) {
+      height: 40px !important;
+    }
+
+
+  }
+
+  .INPUT::placeholder {
+    color: #d2ab5f;
+  }
+
+  .submit-div {
+
+    background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    padding: 15px 0;
+
+    .submit-btn {
+      border: 0;
+      outline: 0;
+      color: #d2ab5f;
+      text-transform: uppercase;
+      font-size: 18px;
+      background-color: transparent;
+      width: 100%;
+
+    }
+
+  }
+
+}
+
+
+
+.block-0 .settings_content .settings-title {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d2ab5f;
+
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 13px;
+    padding-bottom: 36px;
+    font-size: 19px;
+  }
+}
+
+
+.settings-D {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 80%;
+  color: #d2ab5f;
+  
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+
+  .settings-txt {
+    word-spacing: 4px;
+  }
+
+
+
+  .name-container {
+    input {
+      width: 60%;
+      height: 30px;
+    }
+  }
+
+
+}
+
+.submit-ans1 {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  position: relative;
+  top: 15px;
+  font-family: "Modern No. 20";
+
+  @media (min-width: 1750px) {
+    width: 70%;
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  .action {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #d2ab5f;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+  }
+}
+
+.form-control {
+  background: #05142399;
+  border: 1px solid #193550;
+  margin-top: 5px !important;
+  border-radius: 4px;
+  color: #d2ab5f;
+  height: 37px;
+
+  @media (min-width: 1750px) {
+    padding: 12px;
+  }
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 1px 0px 3px #3f8eade6;
+  color: #d2ab5f;
+}
+
+.settings-D {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 80%;
+  color: #d2ab5f;
+  
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 30px;
+
+
+  .settings-txt {
+    word-spacing: 4px;
+  }
+}
+
+.requird_input {
+  box-shadow: #f30808 0px 0px 0px 1px, #770505 0px 1px 4px 0px;
+}
+
+.form-invalid {
+  opacity: 50%;
+}
+.signup-txt {
+  text-align: left;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 5px 5px ;
+  strong{
+    color: red;
+  }
+}

@@ -1,0 +1,105 @@
+<div class="land-fluid row td-overlay__inner">
+  <section class="land-fluid">
+    <div class="row content">
+      <div class="col-3">
+        <app-left-side-bar *ngIf="isTeamInfoExists"></app-left-side-bar>
+      </div>
+      <div class="col-6 block--full">
+        <div class="landing">
+          <div class="content-block">
+
+            <div class="block-1">
+              <div class="coming_soon_txt">
+                <div>
+                  <div class="aboutDiv">
+                    <div class="dataDiv" [ngClass]="isTeamInfoExists ? 'data-div-logged': '' ">
+                      <h2 style="font-weight: bold;">About This Event</h2>
+                      <p>Arab Security Cyber Wargames Championship is an interactive cybersecurity challenge that
+                        immerses participants in a
+                        simulated cyber-attack scenario, such as gaining or preventing access to a computer system or
+                        exploiting and defending a vulnerability in a system or an application.</p>
+                      <p>
+                        - The First 10 teams in the qualifications will run for the final in Egypt.
+                      </p>
+                      <p>
+                        - Kindly be Informed that Arab Security Cyber Wargames unfortunately, doesn’t cover package for
+                        the first 10 teams (flight or accommodation) this year.
+                      </p>
+                      <h2 style="font-weight: bold;">Core Objectives:</h2>
+                      <p>
+                        - Prepare participants to real-life security challenges and demands
+                      </p>
+                      <p>
+                        - Challenge participants to exploit and defend computer systems
+                      </p>
+                      <p>
+                        - Help participants to identify their strength and weakness inside a safe, forgiving and
+                        collaborative environment
+                      </p>
+                      <p>
+                        - Help recruiters and management to spot growing talents and headhunt existing professionals
+                      </p>
+                      <p>
+                        - Encourage participants to work on their soft skills, such as communication, teamwork, time
+                        management, problem solving and adaptability
+                      </p>
+
+                      <h2 style="font-weight: bold;">Core Objectives:</h2>
+                      <p> - Prepare participants to real-life security challenges and demands </p>
+                      <p> - Challenge participants to exploit and defend computer systems</p>
+                      <p>- Help participants to identify their strength and weakness inside a safe, forgiving and
+                        collaborative environment</p>
+                      <p>- Help recruiters and management to spot growing talents and headhunt existing professionals
+                      </p>
+                      <p>- Encourage participants to work on their soft skills, such as communication, teamwork, time
+                        management, problem solving and adaptability</p>
+                      <h2 style="font-weight: bold;">Championship Domains</h2>
+                      <p>
+                        Arab Security Cyber Wargames simulate a prolonged and persistent cyber-attack in several,
+                        multifaceted phases. In which participants will be exposed to different domains including :
+                      </p>
+                      <p>- Reverse engineering</p>
+                      <p>- Network analysis and hacking</p>
+                      <p>- Web hacking</p>
+                      <p>- Steganography</p>
+                      <p>- Hash cracking</p>
+                      <p>- Cryptography</p>
+                      <p>- Programming</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="register" *ngIf="!isTeamInfoExists">
+                <div class="login-D" (click)="goToLogin()" title="Login">
+                  <div class="login-txt">
+                    <span>LOGIN</span>
+                  </div>
+                </div>
+                <div class="signup-D">
+                  <div class="register-txt" (click)="goToSignUp()" title="SignUP">
+                    <span>SIGN UP</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="discord">
+                <span class="dis">
+                  <a class="aaa" href="https://discord.gg/AfC55gy4vK" target="_blank"><img src="/assets/discord.png"
+                      height="20px" style=" margin-top: -4px;" /> Discord</a>
+                </span>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <app-right-side-bar></app-right-side-bar>
+      </div>
+    </div>
+  </section>
+</div>

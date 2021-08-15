@@ -1,0 +1,109 @@
+<div class="spinner" *ngIf="isLoading">
+  <app-spinner></app-spinner>
+</div>
+
+<div class="land-fluid row td-overlay__inner" *ngIf="!isLoading">
+  <section class="land-fluid">
+    <div>
+      <app-logo-home></app-logo-home>
+    </div>
+    <div class="row content" id="contlarge">
+      <div class="col-3">
+        <app-left-side-bar></app-left-side-bar>
+      </div>
+      <div class="col-6 block--full">
+        <div class="score--board">
+          <div class="content-block">
+            <div class="block-0">
+              <div class="block-0-0">
+                <div class="score-board_content">
+                  <div class="score-title">
+                    <span>Team Profile</span>
+                  </div>
+                </div>
+                <div class="team-score-container">
+                  <div class="header-team-score">
+                    <span>Team Name</span>
+                    <span>Team Rank</span>
+                    <span>Team Score</span>
+                    <span>Team Country</span>
+                  </div>
+                  <div class="team-score-img">
+                    <div class="team-score-content">
+                      <span> <strong
+                          [ngClass]="(nameClass && !newLine) ? 'name-big': (newLine && nameClass) ?  'newLine' :''">{{
+                          profileInfo.name }}</strong></span>
+                      <span>{{ profileInfo.rank }}</span>
+                      <span>{{ profileInfo.score }}</span>
+                      <span>{{ profileInfo.country }}</span>
+                    </div>
+                  </div>
+
+                  <div class="challenge-dash-container">
+                    <div class="challenge-dash-header">
+                      <div class="challenge-header-img">
+                        <div class="challenge-header-text row">
+                          <div class="ch-no col-2">
+                            <span>#</span>
+                          </div>
+                          <div class="ch-name col-4">
+                            <span>Challenge Name</span>
+                          </div>
+                          <div class="ch-points col-3">
+                            <span>Points</span>
+                          </div>
+                          <div class="ch-time col-3">
+                            <span id="subtime"> Time</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="score-detials-container">
+                    <div class="score-detail-img">
+
+                      <div class="challenge-items-container">
+                        <div class="challenge-score-item not-solved" *ngIf="challenges.length <= 0">
+                          <span>This team did not solve any challenges yet.</span>
+                        </div>
+
+                        <div class="challenge-score-item">
+                          <div class="score-item-container" *ngFor="let challenge of challenges; let i = index">
+                            <div class="row" [ngClass]="{
+                                my_class: i === challenges.length - 1
+                              }">
+                              <div class="ch-NO col-2">
+                                <span>{{
+                                  i + 1 + currentPage * pageSize
+                                  }}</span>
+                              </div>
+                              <div class="ch-name col-5">
+                                <span>{{challenge.challenge.title}} </span>
+                              </div>
+                              <div class="ch-points col-2">
+                                <span>{{challenge.points}} </span>
+                              </div>
+                              <div class="ch-time col-3">
+                                <span id="time">{{challenge.updatedAt | date: 'd, h:mm a': '+0000'}} </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <mat-paginator showFirstLastButtons [hidePageSize]="false" [pageSize]="pageSize"
+                      [pageIndex]="currentPage" [length]="length"></mat-paginator> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="paginate"></div>
+      <div class="col-3">
+        <app-right-side-bar></app-right-side-bar>
+      </div>
+    </div>
+  </section>
+</div>

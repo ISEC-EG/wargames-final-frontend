@@ -1,0 +1,413 @@
+.land-fluid,
+.content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.landing,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.block-0 {
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    padding-top: 140px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    padding-top: 160px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    padding-top: 175px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-top: 200px;
+  }
+}
+
+.coming_soon_context {
+  text-align: center;
+  margin-top: 5px;
+
+  .soon_txt_img {
+    @media (min-width: 0px) and (max-width: 1199px) {
+      width: 60%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 68%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      width: 70%;
+    }
+
+    @media (min-width: 1750px) {
+      width: 100%;
+    }
+  }
+}
+
+.coming_soon_clock {
+  margin-top: 10px;
+  text-align: center;
+
+  .soon_clock_img {
+
+    @media (min-width: 0px) and (max-width: 1199px) {
+      width: 65%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 75%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      width: 80%;
+    }
+
+    @media (min-width: 1800px) {
+      width: 100%;
+    }
+  }
+}
+
+.coming_soon_clock .clock-text {
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Counter.png');
+  background-repeat: no-repeat;
+  background-size: 34% 100%;
+  background-position: center;
+  padding: 20px;
+  padding-bottom: 27px;
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    background-size: 30% 100%;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    background-size: 33% 100%;
+  }
+
+  @media (min-width: 1750px) {
+    background-size: 41% 100%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.coming_soon_logo {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  width: 40%;
+  margin: 0 auto;
+
+  .soon_logo {
+    cursor: none;
+    @media (min-width: 0px) and (max-width: 1199px) {
+      width: 60%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 65%;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1749px) {
+      width: 80%;
+    }
+
+  }
+}
+
+.block-1 {
+  position: relative;
+  top: 100px;
+  // bottom: 42px;
+
+  // @media (min-width: 1600px) and (max-width: 1749px) {
+  //   bottom: 55px;
+  // }
+
+  // @media (min-width: 1750px) {
+  //   bottom: 50px;
+  // }
+}
+
+.coming_soon_txt {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Tex-Intro.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  div {
+    font-family: "Modern No. 20";
+    font-weight: 600;
+
+    padding: 10px 13px 13px 10px;
+
+
+  }
+}
+
+
+.flex-col-c {
+  color: black;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1750px) {
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+
+}
+
+::ng-deep countdown span .item0 {
+  position: relative;
+
+}
+
+.register {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.signup-D {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 80%;
+  color: #d2ab5f;
+
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 0px;
+
+
+  .register-txt {
+    word-spacing: 4px;
+  }
+
+
+  .name-container {
+    input {
+      width: 60%;
+      height: 30px;
+    }
+  }
+
+
+  @media (min-width: 1850px) {
+    text-align: center;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 99%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 45%;
+    color: #d2ab5f;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+.login-D {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 80%;
+  color: #d2ab5f;
+
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 0px;
+  cursor: pointer;
+
+
+  .login-txt {
+    word-spacing: 4px;
+  }
+
+
+  .name-container {
+    input {
+      width: 60%;
+      height: 30px;
+    }
+  }
+
+
+  @media (min-width: 1850px) {
+    text-align: center;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 99%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 45%;
+    color: #d2ab5f;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+.login-D:hover,
+.signup-D:hover {
+  opacity: 80%;
+}
+
+
+.aboutDiv {
+  width: 100%;
+  width: 100%;
+  color: #010c14;
+  padding: 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+
+  h2 {
+    font-size: 18px !important;
+    color: #861521;
+  }
+
+  .dataDiv {
+    height: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .data-div-logged {
+    height: 120px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  /* width */
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+
+  ::-webkit-scrollbar-thumb {
+    /* background: red;  */
+    background: linear-gradient(#620d07, #FFDA87, #620d07);
+    /* scrollbar-color: #d06900, #00a173; */
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#620d07, #FFDA87, #620d07);
+    /* scrollbar-color: #fEa200, #00de9f; */
+    cursor: pointer;
+  }
+}
+
+
+
+.discord {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.dis {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #050D18;
+  padding-top: 2px;
+
+  a {
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    color: #FFDA87;
+
+
+  }
+}

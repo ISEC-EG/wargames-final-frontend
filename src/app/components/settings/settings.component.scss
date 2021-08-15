@@ -1,0 +1,207 @@
+.settings-fluid,
+.content {
+  height: inherit;
+}
+
+.block--full {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Modern No. 20";
+}
+
+.settings--block,
+.content-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.block-0 {
+  width: inherit;
+
+  @media (min-width: 0px) and (max-width: 1199px) {
+    padding-top: 130px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    padding-top: 150px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1749px) {
+    padding-top: 165px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-top: 145px;
+  }
+}
+
+.block-0 .settings_content {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Title.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  bottom: 90px;
+
+  
+}
+
+.block-0 .settings_content .settings-title {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d2ab5f;
+
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1750px) {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 13px;
+    padding-bottom: 36px;
+    font-size: 19px;
+  }
+}
+
+
+.settings-D {
+  text-align: center;
+  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 80%;
+  color: #d2ab5f;
+  
+  font-weight: 600;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 30px;
+
+
+  .settings-txt {
+    word-spacing: 4px;
+  }
+
+
+  .name-container {
+    input {
+      width: 60%;
+      height: 30px;
+    }
+  }
+
+
+  @media (min-width: 1850px) {
+    text-align: center;
+    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 99%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 45%;
+    color: #d2ab5f;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.pass-container,
+.old-pass-container,
+.confirm-pass-container {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.form-control {
+  background: #05142399;
+  border: 1px solid #193550;
+  border-radius: 4px;
+  color: #d2ab5f;
+
+  @media (min-width: 1750px) {
+    padding: 12px;
+  }
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 1px 0px 2px #3f8eade6;
+  color: #d2ab5f;
+}
+
+
+.submit-ans {
+  text-align: center;
+  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/Long-Btn-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 67%;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  position: relative;
+  top: 16px;
+  font-family: "Modern No. 20";
+
+  @media (min-width: 1750px) {
+    width: 70%;
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  .action {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #d2ab5f;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+  }
+}
+
+.requird_input {
+  box-shadow: #f30808 0px 0px 0px 1px, #770505 0px 1px 4px 0px;
+}
+
+.form-invalid {
+  opacity: 50%;
+}
+
+
+.password-errors, .c-password-errors {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+}

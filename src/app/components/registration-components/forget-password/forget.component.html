@@ -1,0 +1,71 @@
+<div class="settings-fluid row td-overlay__inner">
+    <section class="settings-fluid">
+        <div class="row content">
+            <div class="col-3">
+            </div>
+            <div class="col-6 block--full">
+                <div class="settings--block">
+                    <div class="content-block">
+                        <div class="block-0">
+
+                            <div class="settings_content">
+                                <div class="settings-title">
+                                    <span>SETTINGS</span>
+                                </div>
+                            </div>
+
+                            <div class="qoute">
+                                <div class="qoute-img">
+                                    <img class="back-img" src="https://ihawk.s3.us-east-2.amazonaws.com/BG-Tex-Intro.png"
+                                        style="width: 100%;">
+                                    <div class="img-text">
+                                        <p class="signup-txt">
+                                             Password must Contains at least 8 Characters , Special Characters <strong>(@ , / , % , $ , #)</strong> , Capital Character and numbers 
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="settings-name">
+                                <div class="settings-D">
+                                    <div class="settings-txt">
+                                        <span>FORGET PASSWORD</span>
+                                    </div>
+                                </div>
+                                <div class="form-change-pass">
+                                    <form [formGroup]="forgetPasswordForm" (ngSubmit)="submitNewPassword()">
+                                        <div class="inputs">
+
+                                            <input class=" form-control" type="password" placeholder="New Password"
+                                                formControlName="password"
+                                                [ngClass]="(password.invalid && password.touched && password.dirty) || (password.errors?.required && password.touched) ? 'requird_input' : ''">
+
+                                            <input class=" form-control" type="password"
+                                                placeholder="Confirm New Password" formControlName="confirmPassword"
+                                                [ngClass]="(forgetPasswordForm.errors?.misMatch) || (confirmPassword.errors?.required && confirmPassword.touched)? 'requird_input' : ''">
+
+                                            <div class="submit-ans1"
+                                                [ngClass]="forgetPasswordForm.invalid || (forgetPasswordForm.valid && loged)  ? 'form-invalid': ''  ">
+                                                <div class="content-ans">
+                                                    <input type="submit" class="action" value="Confirm"
+                                                        [disabled]="forgetPasswordForm.invalid || (forgetPasswordForm.valid && loged)">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </section>
+</div>
