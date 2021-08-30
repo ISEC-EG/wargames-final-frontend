@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path: "",
     component: ScoreBoardComponent,
-    canActivate: [AuthGuardService],
+    // canActivate: [AuthGuardService],
   },
 
   {

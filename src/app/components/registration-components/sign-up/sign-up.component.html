@@ -25,17 +25,28 @@
         </div>
       </div>
 
-      <div>
+      <div   class="password-container">
         <input
           [ngClass]="(teamSecret.invalid && teamSecret.touched && teamSecret.dirty) || (teamSecret.errors?.required && teamSecret.touched) ? 'requird_input' : ''"
-          placeholder="Team Secret" formControlName="teamSecret" type="text" class="INPUT form-control">
+          placeholder="Team Secret" formControlName="teamSecret" type="text" class="INPUT form-control secret">
+          <div class="country">
+            <mat-form-field class="eventType">
+              <mat-label>Country</mat-label>
+              <mat-select (selectionChange)=" countrySelected($event)">
+                <mat-option *ngFor="let country of allCountriesArr" value="{{country.name}}">{{country.name}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+      </div>
+      <div>
+        
       </div>
 
       <div>
-        <div class="submit-ans" [ngClass]="(signupForm.valid && !loged ) ? '': 'form-invalid' ">
+        <div class="submit-ans" [ngClass] = "((signupForm.valid && !loged )&& countryValue !== '') ? '': 'form-invalid' ">
           <div class="content-ans">
             <input type="submit" class="action" value="SIGN UP" (click)="submitSignupForm()"
-              [disabled]="signupForm.invalid || (signupForm.valid && loged)">
+              [disabled]="signupForm.invalid || countryValue === '' || (signupForm.valid && loged)">
           </div>
         </div>
 

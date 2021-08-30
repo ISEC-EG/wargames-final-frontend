@@ -285,31 +285,39 @@
 
       overflow-y: scroll;
 
+      overflow-y: scroll;
       &::-webkit-scrollbar {
-        width: 10px;
+        width: 5px;
+        height: 5px;
+        overflow: visible;
       }
-
+      &::-webkit-scrollbar-button {
+        width: 5px; //for horizontal scrollbar
+        height: 5px !important; //for vertical scrollbar
+      }
+    
       /* Track */
-
+    
       &::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey !important;
         border-radius: 10px !important;
       }
-
+    
       /* Handle */
-
+    
       &::-webkit-scrollbar-thumb {
         /* background: red;  */
-        background: linear-gradient(#620d07, #FFDA87, #620d07) !important;
-        /* scrollbar-color: #d06900, #00a173; */
+        background: linear-gradient(#988657, #988657, #988657) !important;
+        // scrollbar-color: #d06900, #00a173 ; 
         cursor: pointer;
         border-radius: 10px;
+        max-height: 15px !important;
       }
-
+    
       /* Handle on hover */
-
+    
       &::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(#620d07, #FFDA87, #620d07);
+        background: linear-gradient(#988657, #917f53, #988657) !important;
         /* scrollbar-color: #fEa200, #00de9f; */
         cursor: pointer;
       }
@@ -320,7 +328,7 @@
           display: flex;
           text-align: center;
           width: 100%;
-          height: 100%;
+          height: 40px;
           margin: 5px auto;
           font-size: 17px;
           font-weight: bold;
@@ -458,4 +466,14 @@
       font-size: 17px;
     }
 
+  }
+  .item-over{
+    display: flex;
+        flex-direction: column;
+        width: 87%;
+        margin: auto;
+        height: 80%;
+        
+        
+        overflow-y : hidden !important ;
   }

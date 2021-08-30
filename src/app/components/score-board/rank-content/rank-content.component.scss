@@ -1,14 +1,19 @@
 .team-rank {
     text-align: center;
-    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Score-Board-BG.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+  //  background-color: rgba(0, 0, 0, 0.233);
+  // background: rgba(211, 202, 173, 0.308);
+// background: linear-gradient(137deg, rgba(211,202,173,1) 0%, rgba(232,220,176,1) 100%);
+// background-color: #00000044;
+background: url(../../../../assets/wargames/bg4.png);
+background-size: 100% 100%;
+  
     display: flex;
     flex-direction: row;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    margin: 10px auto;
+    padding: 1px 0;
     font-weight: bold;
+    color: rgb(36, 36, 36);
+    border-radius: 5px;
   
     @media (min-width: 1400px) and (max-width: 1599px) {
       font-size: 17px;
@@ -23,9 +28,9 @@
     }
   
     .rank {
-      text-align: center;
-      position: relative;
-      left: 30px;
+      // text-align: center;
+      // position: relative;
+      // left: 30px;
   
       @media (min-width: 1600px) and (max-width: 1749px) {
         left: 35px;
@@ -35,11 +40,50 @@
           left: 40px;
         }
     }
+    .rank-new{
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-right: 1px solid black;
+      -o-border-image: linear-gradient(to bottom, #0c1725, #a09d5f, #050c15) 1 100%;
+      border-image: linear-gradient(to bottom, #fff0c5, #171610, #f5e8c4) 1 100%;
+    }
+    .name-new{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-right: 1px solid black;
+      -o-border-image: linear-gradient(to bottom, #0c1725, #a09d5f, #050c15) 1 100%;
+            border-image: linear-gradient(to bottom, #fff0c5, #171610, #f5e8c4) 1 100%;
+    }
+    .country-new{
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-right: 1px solid black;
+      -o-border-image: linear-gradient(to bottom, #0c1725, #a09d5f, #050c15) 1 100%;
+            border-image: linear-gradient(to bottom, #fff0c5, #171610, #f5e8c4) 1 100%;
+    }
+    .points-new{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      -o-border-image: linear-gradient(to bottom, #0c1725, #a09d5f, #050c15) 1 100%;
+            border-image: linear-gradient(to bottom, #fff0c5, #171610, #f5e8c4) 1 100%;
+    }
   
     .country {
-      text-align: end;
-      position: relative;
-      left: 12px;
+      // text-align: end;
+      // position: relative;
+      // left: 12px;
   
       img {
         border-radius: 50%;
@@ -68,4 +112,20 @@
 
     
 }
-  
+// @keyframes slider{
+//   from {transform: translateY(0vh);}
+//   to {transform: translateY(10vh);}
+// }
+// .slide{
+//   animation: slider 1s reverse;
+// }
+.slide-card{
+  display: block;
+  transition: transform 1s ease-in-out;
+  /* back on screen: translateY to a lower level */
+  animation: slider 2s infinite;
+}
+@keyframes slider{
+  from {display: block;}
+  to {display: none;}
+}

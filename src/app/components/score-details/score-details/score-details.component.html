@@ -67,7 +67,7 @@
                           <span>This team did not solve any challenges yet.</span>
                         </div>
 
-                        <div class="challenge-score-item">
+                        <div class="challenge-score-item" [ngClass]="overfloow ? '' : 'item-over' ">
                           <div class="score-item-container" *ngFor="let challenge of challenges; let i = index">
                             <div class="row" [ngClass]="{
                                 my_class: i === challenges.length - 1

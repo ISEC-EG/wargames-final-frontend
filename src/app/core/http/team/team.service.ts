@@ -115,7 +115,7 @@ export class TeamService {
   }
 
   dashboard(pageNo, limit): Observable<Team[]> {
-    if (!this.teams_page$.value.includes(pageNo)) {
+    // if (!this.teams_page$.value.includes(pageNo)) {
       this.teams_page$.next([...this.teams_page$.value, pageNo]);
       return this.http
         .get(
@@ -146,17 +146,18 @@ export class TeamService {
           shareReplay({ bufferSize: 1, refCount: true }),
           retry(2)
         );
-    } else {
-      let teams$ = new BehaviorSubject<Team[]>(this.teams);
-      teams$.next(
-        this.teams_page_no$.value.find((el) => el.pageNo === pageNo).pageData
-      );
+    // } else {
+    //   let teams$ = new BehaviorSubject<Team[]>(this.teams);
+    //   teams$.next(
+    //     this.teams_page_no$.value.find((el) => el.pageNo === pageNo).pageData
+    //   );
 
-      return teams$;
-    }
+    //   return teams$;
+    // }
   }
 
   updateDashBoardNewPages(pageNo) {
+    
     this.teams_page$.next([
       ...this.teams_page$.value.filter((el) => {
         return el !== pageNo;

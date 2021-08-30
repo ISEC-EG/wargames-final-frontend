@@ -11,6 +11,7 @@ import { HelperService } from "src/app/core/helper/helper.service.js";
 import { SnackbarService } from "src/app/core/helper/snackbar.service.js";
 import { TeamService } from "src/app/core/http/team/team.service.js";
 import { PasswordValidator } from "src/app/core/validation/password.validator.js";
+import { All } from "../../../core/data/data.js";
 // import { OtpComponent } from "src/app/components/registration-components/otp/otp.component";
 @Component({
   selector: "app-sign-up",
@@ -20,6 +21,9 @@ import { PasswordValidator } from "src/app/core/validation/password.validator.js
 export class SignUpComponent implements OnInit {
   signupForm: FormGroup;
   loged: boolean = false;
+  allCountriesArr: any = [];
+  countryValue: string = "";
+  countryFlag = false;
   // private composeVerificationDialog: any = null;
 
   constructor(
@@ -32,6 +36,7 @@ export class SignUpComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.allCountriesArr = All;
     this.signupForm = this.initSignupForm();
   }
 
@@ -88,6 +93,9 @@ export class SignUpComponent implements OnInit {
   get teamSecret() {
     return this.signupForm.get("teamSecret");
   }
+  get country() {
+    return this.signupForm.get("country");
+  }
 
 
   // composeVerification() {
@@ -116,7 +124,10 @@ export class SignUpComponent implements OnInit {
           email: this.email.value.trim(),
           password: this.password.value,
           secret: this.signupForm.value.teamSecret,
+          country: this.countryValue.trim(),
         };
+        console.log(registerData);
+        
         let signupData = await this.teamService.signup(registerData).toPromise();
         await this.authService.logoutTemp();
         await this.authService.logout();
@@ -149,6 +160,12 @@ export class SignUpComponent implements OnInit {
         return this.snackBar.openSnackBar(
           "Confirm password and password not match ❌"
         );
+        else if (this.signupForm.valid && this.countryValue === "")
+        return this.snackBar.openSnackBar("Please select your country ❌");
     }
+  }
+  countrySelected(e) {
+    this.countryValue = e.value;
+    this.countryFlag = true;
   }
 }

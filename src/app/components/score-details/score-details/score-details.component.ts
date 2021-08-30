@@ -27,6 +27,7 @@ export class ScoreDetailsComponent implements OnInit {
   newLine: boolean = false;
 
   isLoading: boolean = false;
+  overfloow : boolean = false;
 
   constructor(
     private teamService: TeamService,
@@ -43,6 +44,7 @@ export class ScoreDetailsComponent implements OnInit {
         this.length = this.challenges.length;
         this.isLoading = false;
         this.checkName();
+        this.overflow()
       });
     });
 
@@ -51,6 +53,7 @@ export class ScoreDetailsComponent implements OnInit {
         this.currentPage = data.pageIndex;
       });
     }
+    
   }
 
   async profile(id: string): Promise<TeamProfileInfo> {
@@ -71,6 +74,17 @@ export class ScoreDetailsComponent implements OnInit {
     if (spaces >= 3) {
       this.newLine = true;
       this.nameClass = true;
+    }
+  }
+  overflow() {
+    console.log(this.challenges.length);
+    
+    if(this.challenges.length < 6){
+      return this.overfloow = false
+
+    }
+    else{
+     return this.overfloow = true;
     }
   }
 }
