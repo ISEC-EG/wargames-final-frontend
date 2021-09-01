@@ -11,10 +11,13 @@ export class SnackbarService {
 
   
   openSnackBar(data) {
+    
     this._snackBar.openFromComponent(ToastBarComponent, {
       duration: this.durationInSeconds * 1000,
       data: data,
       panelClass: 'toast'
     });
+    // console.log(this._snackBar);
+    
   }
 }

@@ -122,6 +122,8 @@ export class ChallengePageComponent implements OnInit {
           );
         }
       } catch (e) {
+        // console.log(e);
+        
         return this.snackBarService.openSnackBar(e);
       }
     } else {

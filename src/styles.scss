@@ -83,11 +83,11 @@ img::selection {
 }
 
 .toast {
-
   width: 800px !important;
   text-align: center;
   position: relative;
   bottom: 50px;
+  display: block !important;
 }
 
 .mat-dialog-container {

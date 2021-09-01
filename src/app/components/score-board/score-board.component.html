@@ -20,12 +20,12 @@
                                     <span>SCORE-BOARD</span>
                                 </div>
                             </div>
-                            <div class="teams-container" [@listAnimation]="length">
+                            <div class="teams-container" >
 
                                 <div *ngFor="let team of teamsArr, let i = index" class="team" [ngClass]="slide ? 'slide-card' : '' "
                                     (click)="goToProfile(team._id)"
                                     >
-                                    <app-rank-content [@slideIn]="slide ? true : false" [rankNo]="i + 1" [pageIndex]="currentPage" [pageSize]="pageSize"
+                                    <app-rank-content  [rankNo]="i + 1" [pageIndex]="currentPage" [pageSize]="pageSize"
                                         [team]="team">
                                     </app-rank-content>
                                 </div>
