@@ -88,7 +88,7 @@
 }
 
 .coming_soon_clock .clock-text {
-  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Counter.png');
+  // background: url('https://ihawk.s3.us-east-2.amazonaws.com/Counter.png');
   background-repeat: no-repeat;
   background-size: 34% 100%;
   background-position: center;
@@ -152,7 +152,7 @@
 
 .coming_soon_txt {
   text-align: center;
-  background-image: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Tex-Intro.png');
+  background-image: url('/assets/wargames/BG-Tex-Intro.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -203,7 +203,7 @@
   outline: none;
   border: none;
   text-align: center;
-  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+  background: url('/assets/wargames/Short-Btn-1.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -237,7 +237,7 @@
 
   @media (min-width: 1850px) {
     text-align: center;
-    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-1.png');
+    background: url('/assets/wargames/Short-Btn-1.png');
     background-repeat: no-repeat;
     background-size: 100% 99%;
     background-position: center;
@@ -258,7 +258,7 @@
 
 .login-D {
   text-align: center;
-  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-2.png');
+  background: url('/assets/wargames/Short-Btn-2.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -293,7 +293,7 @@
 
   @media (min-width: 1850px) {
     text-align: center;
-    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Short-Btn-2.png');
+    background: url('/assets/wargames/Short-Btn-2.png');
     background-repeat: no-repeat;
     background-size: 100% 99%;
     background-position: center;

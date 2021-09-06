@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  host: "http://192.168.1.18:5000/api",
-  SOCKET_ENDPOINT: "http://192.168.1.18:5000",
+  host: "http://10.0.0.200:5000/api",
+  SOCKET_ENDPOINT: "http://10.0.0.200:5000",
 };
 
 /*

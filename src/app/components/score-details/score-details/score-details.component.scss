@@ -47,7 +47,7 @@
 
 .block-0 .score-board_content {
   text-align: center;
-  background: url('https://ihawk.s3.us-east-2.amazonaws.com/Title.png');
+  background: url('/assets/wargames/Title.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -139,7 +139,7 @@
   .team-score-img {
     display: flex;
     flex-direction: row;
-    background: url('https://ihawk.s3.us-east-2.amazonaws.com/Team-Profile-Info.png');
+    background: url('/assets/wargames/Team-Profile-Info.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -188,7 +188,7 @@
       .challenge-header-img {
 
         width: 100%;
-        background: url('https://ihawk.s3.us-east-2.amazonaws.com/Challenge-Description-BG.png');
+        background: url('/assets/wargames/Challenge-Description-BG.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
@@ -254,7 +254,7 @@
       margin: 0 auto;
       margin-left: -5%;
 
-      background: url('https://ihawk.s3.us-east-2.amazonaws.com/BG-Team-Profile.png');
+      background: url('/assets/wargames/BG-Team-Profile.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-position: center;

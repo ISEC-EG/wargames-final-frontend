@@ -29,6 +29,7 @@ export class ChallengePageComponent implements OnInit {
   teamID: string = "";
 
   titleIsWeb: boolean = false;
+  
 
   constructor(
     private matDialog: MatDialog,
@@ -49,9 +50,10 @@ export class ChallengePageComponent implements OnInit {
     this.route.params.subscribe((params) => {
       this.challengeID = params["challengeID"];
       this.challenge = this.getTheChallenge(this.challengeID);
-      if ((this.challenge.category === 'web') || (this.challenge.category === 'warm_up web')) {
+      if ((this.challenge.category === 'web') || (this.challenge.category === 'warm_up web') || (this.challenge.category === 'machines')) {
         this.titleIsWeb = true;
       }
+      
     });
   }
 
